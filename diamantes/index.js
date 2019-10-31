@@ -11,10 +11,10 @@ const escreverODiamanteNaTela = (letra) => {
         atual = nextChar(atual)
     }
     atual = prevChar(atual)
-    for(let indice = 0; indice < quantidadeDeEspacos - 1; indice++) {
+    for(let indice = 1; indice < quantidadeDeEspacos; indice++) {
         atual = prevChar(atual)
         const espacoInterno = quantidadeDeEspacos - indice
-        console.log(`${" ".repeat(indice + 1)}${atual}${" ".repeat(espacoInterno * 2 + 1)}${atual}`) 
+        console.log(`${" ".repeat(indice + 1)}${atual}${" ".repeat(espacoInterno * 2 - 1)}${atual}`) 
     }
     console.log(" ".repeat(quantidadeDeEspacos), "A")
 }
