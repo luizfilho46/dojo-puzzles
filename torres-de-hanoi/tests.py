@@ -1,10 +1,12 @@
-from app import hanoi
+from app import Hanoi
 import unittest
 
 class TestHanoi(unittest.TestCase):
 
     def test_hanoi(self):
-        self.assertEqual(hanoi(1), 1)
+        hanoi = Hanoi()
+        self.assertEqual(hanoi.organizar(), 1)
+        self.assertEqual(quantidadeDeMovimentos, hanoi.quantidadeDeMovimentos())
 
 if __name__ == '__main__':
     unittest.main()
